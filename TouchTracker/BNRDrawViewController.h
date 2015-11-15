@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BNRDrawViewController.h
 //  TouchTracker
 //
 //  Created by Peter Molnar on 17/05/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BNRDrawViewController : UIViewController
 
 @end
-

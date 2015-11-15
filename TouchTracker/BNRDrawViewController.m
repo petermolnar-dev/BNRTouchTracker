@@ -1,23 +1,26 @@
 //
-//  ViewController.m
+//  BNRDrawViewController.m
 //  TouchTracker
 //
 //  Created by Peter Molnar on 17/05/2015.
 //  Copyright (c) 2015 Peter Molnar. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BNRDrawViewController.h"
+#import "BNRDrawView.h"
 
-@interface ViewController ()
+@interface BNRDrawViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BNRDrawViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view = [[BNRDrawView alloc] initWithFrame:CGRectZero];
+    
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
