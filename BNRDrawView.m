@@ -144,7 +144,8 @@
         [self strokeLine:line];
     }
     
-    [[UIColor redColor]set];
+//    [[UIColor redColor]set];
+// A little hack to get the lines in progress changing colour
     for (NSValue *key in self.linesInProgress) {
         BNRLine *curLine =self.linesInProgress[key];
         UIColor *lineColor = [curLine setupColorFromAngle];
@@ -164,6 +165,15 @@
     //        [[UIColor redColor] set];
     //        [self strokeLine:self.currentLine];
     //    }
+    
+//    To test the Time Profiler instrument
+    
+//    float f=0.0;
+//    
+//    for (int i=0; i<1000000; i++) {
+//        f=f+sin(sin(time(NULL)+i));
+//    }
+//    NSLog(@"f = %f",f);
 }
 
 
